@@ -17,13 +17,13 @@ class Vehicle:
               f"\nCena: {self.price} euro")
 
 class Car(Vehicle):
-    def __ini__(self, make, model, year, price, num_doors, body_style):
+    def __init__(self, make, model, year, price, num_doors, body_style):
         super().__init__(make, model, year, price)
         self.num_doors=num_doors
         self.body_style=body_style
 
 class Truck(Vehicle):
-    def __ini__(self, make, model, year, price, bed_length, towing_capacity):
+    def __init__(self, make, model, year, price, bed_length, towing_capacity):
         super().__init__(make, model, year, price)
         self.bed_length=bed_length
         self.towing_capacity=towing_capacity
